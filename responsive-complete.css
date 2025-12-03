@@ -1,0 +1,1437 @@
+/* 100% Responsive Design - All Devices */
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Extra Small Devices (Phones, < 576px) */
+@media (max-width: 575px) {
+    /* Hero Section */
+    .hero-epic {
+        min-height: auto;
+        padding: 80px 15px 40px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-badge {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .hero-title-epic {
+        font-size: 2rem;
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-subtitle-epic {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .feature-pill {
+        justify-content: center;
+        padding: 12px 20px;
+    }
+    
+    .hero-buttons-epic {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-epic {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 30px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stat-divider {
+        width: 100%;
+        height: 1px;
+    }
+    
+    .hero-visual {
+        height: 300px;
+    }
+    
+    .security-shield {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .shield-icon {
+        font-size: 70px;
+    }
+    
+    .floating-card {
+        padding: 12px 16px;
+        min-width: 120px;
+        font-size: 0.85rem;
+    }
+    
+    .card-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Navbar */
+    .nav-container {
+        padding: 0 15px;
+        height: 65px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Theme Toggle */
+    .theme-toggle {
+        width: 50px;
+        height: 50px;
+        top: 75px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 60px 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    /* Method Cards */
+    .methods-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .method-card {
+        padding: 25px;
+    }
+    
+    .method-icon {
+        font-size: 3rem;
+    }
+    
+    .method-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Demo Cards */
+    .demo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .demo-card {
+        padding: 20px;
+    }
+    
+    .demo-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .demo-input,
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .otp-display {
+        font-size: 2rem;
+        letter-spacing: 6px;
+        padding: 15px;
+    }
+    
+    /* Guide Cards */
+    .guides-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .guide-card {
+        padding: 20px;
+    }
+    
+    /* Integration Cards */
+    .integration-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .integration-card {
+        padding: 25px;
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 25px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        padding: 25px 15px;
+        margin: 10px;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-icon {
+        font-size: 3rem;
+    }
+}
+
+/* Small Devices (Phones, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-title-epic {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle-epic {
+        font-size: 1.1rem;
+    }
+    
+    .hero-visual {
+        height: 350px;
+    }
+    
+    .security-shield {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .methods-grid,
+    .demo-grid,
+    .integration-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .guides-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium Devices (Tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .hero-content-epic {
+        max-width: 100%;
+    }
+    
+    .hero-title-epic {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle-epic {
+        font-size: 1.15rem;
+    }
+    
+    .hero-features,
+    .hero-buttons-epic,
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-visual {
+        height: 450px;
+    }
+    
+    .security-shield {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .guides-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .integration-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large Devices (Desktops, 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-container {
+        gap: 60px;
+    }
+    
+    .hero-title-epic {
+        font-size: 3.5rem;
+    }
+    
+    .hero-visual {
+        height: 500px;
+    }
+    
+    .methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .guides-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .integration-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container,
+    .hero-container {
+        max-width: 1140px;
+    }
+    
+    .methods-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* XXL Devices (Extra Large Desktops, >= 1400px) */
+@media (min-width: 1400px) {
+    .container,
+    .hero-container {
+        max-width: 1400px;
+    }
+    
+    .hero-title-epic {
+        font-size: 5rem;
+    }
+    
+    .hero-subtitle-epic {
+        font-size: 1.4rem;
+    }
+    
+    .methods-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .demo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ============================================
+   ORIENTATION SPECIFIC
+   ============================================ */
+
+/* Landscape Orientation on Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero-epic {
+        min-height: auto;
+        padding: 60px 20px 40px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .hero-visual {
+        height: 300px;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Larger tap targets for touch devices */
+    .btn,
+    .btn-epic,
+    .btn-learn-more,
+    .nav-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .method-card:hover,
+    .demo-card:hover,
+    .integration-card:hover {
+        transform: none;
+    }
+    
+    /* Tap highlight color */
+    * {
+        -webkit-tap-highlight-color: rgba(102, 126, 234, 0.2);
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    /* Hide non-essential elements */
+    .navbar,
+    .theme-toggle,
+    .hero-visual,
+    .floating-orbs,
+    .gradient-waves,
+    .sparkles,
+    #particles-canvas,
+    .loading-screen-epic,
+    .scroll-indicator,
+    .btn,
+    .btn-epic,
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    
+    /* Optimize for print */
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    .method-card,
+    .demo-card,
+    .integration-card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn,
+    .btn-epic,
+    .nav-link {
+        border: 2px solid currentColor;
+    }
+    
+    .method-card,
+    .demo-card,
+    .integration-card {
+        border: 2px solid var(--text-primary);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .scroll-indicator,
+    .floating-card,
+    .security-shield,
+    .scan-line {
+        animation: none !important;
+    }
+}
+
+/* Dark Mode Preference */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode) {
+        --bg-primary: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b4e 100%);
+        --bg-secondary: #0a0a15;
+        --text-primary: #f7fafc;
+        --text-secondary: #a0aec0;
+        --card-bg: rgba(30, 30, 60, 0.8);
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES FOR RESPONSIVE
+   ============================================ */
+
+/* Hide on specific devices */
+.hide-mobile {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: block !important;
+    }
+    
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* Responsive text alignment */
+.text-center-mobile {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-center-mobile {
+        text-align: left;
+    }
+}
+
+/* Responsive spacing */
+.mb-mobile-20 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .mb-mobile-20 {
+        margin-bottom: 0;
+    }
+}
+
+/* ============================================
+   CONTAINER QUERIES (Modern Browsers)
+   ============================================ */
+
+@container (max-width: 400px) {
+    .method-card,
+    .demo-card {
+        padding: 20px;
+    }
+}
+
+/* ============================================
+   SAFE AREA INSETS (iPhone X+)
+   ============================================ */
+
+@supports (padding: max(0px)) {
+    .navbar,
+    .hero-epic,
+    .section {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+    
+    .hero-epic {
+        padding-bottom: max(80px, env(safe-area-inset-bottom));
+    }
+}
+
+/* ============================================
+   FLEXIBLE IMAGES
+   ============================================ */
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   RESPONSIVE TABLES
+   ============================================ */
+
+@media (max-width: 767px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* ============================================
+   FOCUS VISIBLE (Accessibility)
+   ============================================ */
+
+:focus-visible {
+    outline: 3px solid var(--accent-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ============================================
+   SMOOTH SCROLLING
+   ============================================ */
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* ============================================
+   VIEWPORT HEIGHT FIX (Mobile Browsers)
+   ============================================ */
+
+.hero-epic {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+
+/* ============================================
+   COMPLETE WEBSITE RESPONSIVE - ALL SECTIONS
+   ============================================ */
+
+/* ============================================
+   BIOMETRIC SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .biometric-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .biometric-card {
+        padding: 20px;
+    }
+    
+    .biometric-icon {
+        font-size: 3rem;
+    }
+    
+    .scan-animation {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ============================================
+   VPN SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .vpn-container {
+        padding: 20px;
+    }
+    
+    .vpn-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .connection-status {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .server-list {
+        max-height: 300px;
+    }
+    
+    .server-item {
+        padding: 12px;
+    }
+    
+    .server-name {
+        font-size: 0.95rem;
+    }
+    
+    .server-stats {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .server-list {
+        max-height: 400px;
+    }
+}
+
+/* ============================================
+   SSO & HARDWARE TOKEN SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .sso-hardware-container {
+        padding: 20px;
+    }
+    
+    .sso-providers {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+    }
+    
+    .sso-provider-card {
+        padding: 15px;
+    }
+    
+    .provider-logo {
+        font-size: 2rem;
+    }
+    
+    .hardware-tokens {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .token-card {
+        padding: 20px;
+    }
+    
+    .token-visual {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sso-providers {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .hardware-tokens {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ============================================
+   ARCHITECTURE SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .architecture-diagram {
+        padding: 20px;
+    }
+    
+    .arch-layer h4 {
+        font-size: 1.1rem;
+    }
+    
+    .arch-components {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .arch-component {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .architecture-features {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    .arch-feature {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .architecture-features {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ============================================
+   UX SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .ux-content {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+    
+    .ux-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .ux-text p {
+        font-size: 1rem;
+    }
+    
+    .device-mockup {
+        padding: 15px;
+    }
+    
+    .mockup-screen {
+        padding: 20px;
+        min-height: 300px;
+    }
+}
+
+/* ============================================
+   LOADING SCREEN RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .loading-logo-epic {
+        margin-bottom: 30px;
+    }
+    
+    .logo-shield {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .shield-center {
+        font-size: 50px;
+    }
+    
+    .loading-title {
+        font-size: 2rem;
+    }
+    
+    .loading-subtitle {
+        font-size: 1rem;
+    }
+    
+    .loading-bar-epic {
+        width: 250px;
+    }
+}
+
+/* ============================================
+   FORM ELEMENTS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px;
+    }
+    
+    textarea {
+        min-height: 120px;
+    }
+    
+    select {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* ============================================
+   BUTTON GROUPS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .hero-buttons,
+    .hero-buttons-epic,
+    .demo-buttons,
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-buttons .btn,
+    .hero-buttons-epic .btn-epic,
+    .demo-buttons .btn,
+    .action-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   STATS & METRICS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .stats-grid,
+    .metrics-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+    
+    .stat-card,
+    .metric-card {
+        padding: 20px;
+    }
+    
+    .stat-number,
+    .metric-number {
+        font-size: 2rem;
+    }
+}
+
+/* ============================================
+   TIMELINE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-item::before {
+        left: -20px;
+    }
+}
+
+/* ============================================
+   TABS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .tab {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ============================================
+   ACCORDION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+    
+    .accordion-header {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    .accordion-content {
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   PROGRESS BARS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .progress-bar {
+        height: 8px;
+    }
+    
+    .progress-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   BADGES & TAGS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .badge,
+    .tag {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+}
+
+/* ============================================
+   TOOLTIPS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .tooltip {
+        font-size: 0.85rem;
+        max-width: 200px;
+    }
+}
+
+/* ============================================
+   DROPDOWN MENUS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .dropdown-menu {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+/* ============================================
+   BREADCRUMBS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .breadcrumb {
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+    }
+    
+    .breadcrumb-item {
+        margin-bottom: 5px;
+    }
+}
+
+/* ============================================
+   PAGINATION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .page-item {
+        margin: 2px;
+    }
+    
+    .page-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   ALERTS & NOTIFICATIONS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .alert,
+    .notification {
+        padding: 15px;
+        font-size: 0.95rem;
+        margin: 10px;
+    }
+    
+    .alert-icon,
+    .notification-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   SEARCH BAR RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .search-bar {
+        width: 100%;
+    }
+    
+    .search-input {
+        font-size: 16px;
+        padding: 12px 40px 12px 15px;
+    }
+    
+    .search-button {
+        padding: 12px;
+    }
+}
+
+/* ============================================
+   FILTER SECTION RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-item {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   SIDEBAR RESPONSIVE
+   ============================================ */
+
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        height: 100vh;
+        width: 280px;
+        transition: left 0.3s ease;
+        z-index: 1500;
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1400;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+}
+
+/* ============================================
+   VIDEO EMBEDS RESPONSIVE
+   ============================================ */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================
+   CODE BLOCKS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    pre,
+    code {
+        font-size: 0.85rem;
+        overflow-x: auto;
+    }
+    
+    pre {
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   LISTS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+/* ============================================
+   BLOCKQUOTES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    blockquote {
+        padding: 15px;
+        margin: 15px 0;
+        font-size: 1rem;
+        border-left-width: 3px;
+    }
+}
+
+/* ============================================
+   SPACING UTILITIES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .mt-mobile-0 { margin-top: 0 !important; }
+    .mt-mobile-10 { margin-top: 10px !important; }
+    .mt-mobile-20 { margin-top: 20px !important; }
+    .mt-mobile-30 { margin-top: 30px !important; }
+    
+    .mb-mobile-0 { margin-bottom: 0 !important; }
+    .mb-mobile-10 { margin-bottom: 10px !important; }
+    .mb-mobile-20 { margin-bottom: 20px !important; }
+    .mb-mobile-30 { margin-bottom: 30px !important; }
+    
+    .pt-mobile-0 { padding-top: 0 !important; }
+    .pt-mobile-10 { padding-top: 10px !important; }
+    .pt-mobile-20 { padding-top: 20px !important; }
+    .pt-mobile-30 { padding-top: 30px !important; }
+    
+    .pb-mobile-0 { padding-bottom: 0 !important; }
+    .pb-mobile-10 { padding-bottom: 10px !important; }
+    .pb-mobile-20 { padding-bottom: 20px !important; }
+    .pb-mobile-30 { padding-bottom: 30px !important; }
+}
+
+/* ============================================
+   OVERFLOW HANDLING
+   ============================================ */
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+    
+    .container,
+    .section,
+    .card,
+    .modal-content {
+        overflow-x: hidden;
+    }
+}
+
+/* ============================================
+   FONT SIZE UTILITIES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .text-xs-mobile { font-size: 0.75rem !important; }
+    .text-sm-mobile { font-size: 0.875rem !important; }
+    .text-base-mobile { font-size: 1rem !important; }
+    .text-lg-mobile { font-size: 1.125rem !important; }
+    .text-xl-mobile { font-size: 1.25rem !important; }
+}
+
+/* ============================================
+   DISPLAY UTILITIES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .d-mobile-none { display: none !important; }
+    .d-mobile-block { display: block !important; }
+    .d-mobile-flex { display: flex !important; }
+    .d-mobile-grid { display: grid !important; }
+}
+
+@media (min-width: 768px) {
+    .d-desktop-none { display: none !important; }
+    .d-desktop-block { display: block !important; }
+    .d-desktop-flex { display: flex !important; }
+    .d-desktop-grid { display: grid !important; }
+}
+
+/* ============================================
+   FLEX UTILITIES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .flex-mobile-column { flex-direction: column !important; }
+    .flex-mobile-row { flex-direction: row !important; }
+    .justify-mobile-center { justify-content: center !important; }
+    .align-mobile-center { align-items: center !important; }
+}
+
+/* ============================================
+   WIDTH UTILITIES RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+    .w-mobile-100 { width: 100% !important; }
+    .w-mobile-75 { width: 75% !important; }
+    .w-mobile-50 { width: 50% !important; }
+    .w-mobile-auto { width: auto !important; }
+}
+
+/* ============================================
+   FINAL RESPONSIVE FIXES
+   ============================================ */
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Ensure all containers are responsive */
+.container,
+.nav-container,
+.hero-container,
+.section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Fix for very small screens */
+@media (max-width: 320px) {
+    .hero-title-epic {
+        font-size: 1.75rem;
+    }
+    
+    .btn,
+    .btn-epic {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .method-card,
+    .demo-card {
+        padding: 15px;
+    }
+}
+
+/* Fix for very large screens */
+@media (min-width: 2560px) {
+    .container,
+    .hero-container {
+        max-width: 1800px;
+    }
+    
+    .hero-title-epic {
+        font-size: 6rem;
+    }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* Reduce animations on low-end devices */
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+    * {
+        animation-duration: 0.5s !important;
+        transition-duration: 0.3s !important;
+    }
+}
+
+/* GPU acceleration for smooth scrolling */
+.section,
+.method-card,
+.demo-card,
+.integration-card {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* ============================================
+   FINAL TOUCH - ENSURE 100% RESPONSIVE
+   ============================================ */
+
+/* All elements must be contained */
+* {
+    box-sizing: border-box;
+}
+
+/* No element should cause horizontal scroll */
+img,
+video,
+iframe,
+canvas,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexible containers */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive grid fallback */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

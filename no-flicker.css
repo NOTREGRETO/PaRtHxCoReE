@@ -1,0 +1,360 @@
+/* COMPLETE FLICKER FIX - Disable All Heavy Effects */
+
+/* ============================================
+   DISABLE ALL BACKGROUND ANIMATIONS
+   ============================================ */
+
+/* Completely hide particles */
+#particles-canvas {
+    display: none !important;
+}
+
+/* Completely hide gradient waves */
+.gradient-waves {
+    display: none !important;
+}
+
+/* Completely hide floating orbs */
+.floating-orbs {
+    display: none !important;
+}
+
+/* Completely hide sparkles */
+.sparkles {
+    display: none !important;
+}
+
+/* Disable scan line */
+.scan-line {
+    display: none !important;
+}
+
+/* Disable hero background effects */
+.hero-background-effects {
+    display: none !important;
+}
+
+/* Disable all animations */
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Only allow essential transitions */
+.btn,
+.btn-epic,
+.nav-link,
+.method-card,
+.demo-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Remove all blur effects */
+.navbar,
+.modal,
+.card-bg,
+.demo-card,
+.method-card,
+.integration-card,
+.guide-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Solid backgrounds instead of blur */
+.navbar {
+    background: var(--navbar-bg) !important;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Remove gradient animations */
+.gradient-text-animated,
+.hero-title-epic span {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    animation: none !important;
+}
+
+/* Disable badge animations */
+.badge-pulse {
+    display: none !important;
+}
+
+/* Disable icon animations */
+.logo-icon,
+.method-icon,
+.demo-icon {
+    animation: none !important;
+}
+
+/* Disable shield animations */
+.security-shield,
+.shield-layer,
+.shield-icon {
+    animation: none !important;
+}
+
+/* Disable floating card animations */
+.floating-card {
+    animation: none !important;
+    position: static !important;
+}
+
+/* Disable scroll animations */
+.scroll-animate,
+.scroll-animate-left,
+.scroll-animate-right,
+.scroll-animate-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Disable loading animations */
+.shield-ring {
+    animation: none !important;
+}
+
+.loading-dots .dot {
+    animation: none !important;
+}
+
+/* Disable hover animations */
+.method-card:hover,
+.demo-card:hover,
+.integration-card:hover {
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Simple hover effect only */
+.btn:hover,
+.btn-epic:hover {
+    opacity: 0.9 !important;
+    transform: none !important;
+}
+
+/* Disable theme toggle animation */
+.theme-toggle:hover {
+    transform: none !important;
+}
+
+/* Disable scroll indicator */
+.scroll-indicator {
+    display: none !important;
+}
+
+/* Remove all pseudo-element animations */
+*::before,
+*::after {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Disable card effects */
+.method-card::before,
+.method-card::after,
+.demo-card::before,
+.demo-card::after {
+    display: none !important;
+}
+
+/* Solid colors only */
+body {
+    background: var(--bg-secondary) !important;
+}
+
+.hero-epic {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%) !important;
+}
+
+/* Remove all shadows for performance */
+.method-card,
+.demo-card,
+.integration-card,
+.navbar,
+.modal-content {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Disable will-change */
+* {
+    will-change: auto !important;
+}
+
+/* Force hardware acceleration only on critical elements */
+.navbar,
+.modal-content {
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+}
+
+/* Instant scroll */
+html {
+    scroll-behavior: auto !important;
+}
+
+/* Disable smooth scrolling */
+* {
+    scroll-behavior: auto !important;
+}
+
+/* Remove gradient backgrounds */
+.section-alt {
+    background: var(--bg-alt) !important;
+}
+
+/* Simplify buttons */
+.btn-epic-primary {
+    background: var(--accent-primary) !important;
+}
+
+.btn-epic-secondary {
+    background: var(--card-bg) !important;
+}
+
+/* Remove complex effects */
+.featured-badge {
+    animation: none !important;
+}
+
+/* Disable OTP animations */
+.otp-display {
+    animation: none !important;
+}
+
+.totp-display {
+    animation: none !important;
+}
+
+/* Disable progress bar animations */
+.totp-progress-bar {
+    transition: none !important;
+}
+
+/* Disable result animations */
+.demo-result {
+    animation: none !important;
+}
+
+/* Disable modal animations */
+.modal {
+    animation: none !important;
+}
+
+.modal-content {
+    animation: none !important;
+}
+
+/* Disable loading screen animations */
+.loading-screen-epic {
+    animation: none !important;
+}
+
+/* Remove all transforms except essential ones */
+* {
+    transform: none !important;
+}
+
+.navbar,
+.modal-content,
+.btn,
+.method-card,
+.demo-card {
+    transform: translateZ(0) !important;
+}
+
+/* Disable opacity transitions */
+* {
+    opacity: 1 !important;
+}
+
+.modal {
+    opacity: 1 !important;
+}
+
+/* Force simple rendering */
+* {
+    image-rendering: auto !important;
+    text-rendering: auto !important;
+}
+
+/* Disable all keyframe animations */
+@keyframes none {
+    0%, 100% { }
+}
+
+/* Override all animations */
+.wave,
+.orb,
+.sparkle,
+.floating-card,
+.scan-line,
+.hero-grid,
+.hero-spotlight,
+.shield-layer,
+.badge-pulse,
+.logo-icon,
+.method-icon {
+    animation-name: none !important;
+    animation-duration: 0s !important;
+}
+
+/* Disable theme transitions */
+body,
+body * {
+    transition: none !important;
+}
+
+/* Only allow color transitions for theme toggle */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+/* Disable all filters */
+* {
+    filter: none !important;
+}
+
+/* Remove drop shadows */
+.shield-icon,
+.logo-icon {
+    filter: none !important;
+}
+
+/* Simplify everything */
+.hero-visual {
+    display: none !important;
+}
+
+/* Show only essential content */
+.hero-content-epic {
+    max-width: 100% !important;
+    text-align: center !important;
+}
+
+/* Remove complex layouts */
+.hero-container {
+    grid-template-columns: 1fr !important;
+}
+
+/* Disable stats animations */
+.stat-number {
+    animation: none !important;
+}
+
+/* Final override - disable everything */
+body * {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Only essential transitions */
+.btn:hover,
+.nav-link:hover {
+    transition: opacity 0.2s ease !important;
+}

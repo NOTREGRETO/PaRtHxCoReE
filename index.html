@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>MFA Solutions - Professional Multi-Factor Authentication Platform | Secure Your Business</title>
+    <meta name="description"
+        content="Enterprise-grade Multi-Factor Authentication (MFA) solutions. Protect your business with SMS OTP, Email OTP, TOTP, Biometric authentication, and more. Try our demo now!">
+    <meta name="keywords"
+        content="MFA, Multi-Factor Authentication, Two-Factor Authentication, 2FA, OTP, TOTP, Biometric Authentication, Security, Cybersecurity, Authentication Platform">
+    <meta name="author" content="MFA Solutions">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mfasolutions.com/">
+    <meta property="og:title" content="MFA Solutions - Professional Multi-Factor Authentication Platform">
+    <meta property="og:description"
+        content="Enterprise-grade Multi-Factor Authentication solutions. Protect your business with advanced security features.">
+    <meta property="og:image" content="https://mfasolutions.com/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mfasolutions.com/">
+    <meta property="twitter:title" content="MFA Solutions - Professional Multi-Factor Authentication Platform">
+    <meta property="twitter:description"
+        content="Enterprise-grade Multi-Factor Authentication solutions. Protect your business with advanced security features.">
+    <meta property="twitter:image" content="https://mfasolutions.com/assets/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="hero-only.css">
+    <link rel="stylesheet" href="custom-cursor.css">
+    <link rel="stylesheet" href="amazing-themes.css">
+
+<body>
+    <!-- Amazing Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Gradient Waves -->
+    <div class="gradient-waves">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+    </div>
+
+    <!-- Floating Orbs -->
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="sparkles" id="sparkles-container"></div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar"></nav>
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-icon">🔐</span>
+            <span class="logo-text">MFA Solutions</span>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#methods" class="nav-link">MFA Methods</a></li>
+            <li><a href="#demo" class="nav-link">Try Demo</a></li>
+            <li><a href="#biometric" class="nav-link">Biometric</a></li>
+            <li><a href="#vpn" class="nav-link">VPN Demo</a></li>
+            <li><a href="#sso-hardware" class="nav-link">SSO + Hardware</a></li>
+            <li><a href="#setup-guides" class="nav-link">Setup Guides</a></li>
+            <li><a href="#integration" class="nav-link">Integration</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">MFA Solution Design</h1>
+            <p class="hero-subtitle">Comprehensive Multi-Factor Authentication for Enterprise Security</p>
+            <div class="hero-buttons">
+                <a href="#methods" class="btn btn-primary">Explore Methods</a>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="security-illustration">
+                <div class="shield">🛡️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MFA Methods Section -->
+    <section id="methods" class="section">
+        <div class="container">
+            <h2 class="section-title">Multi-Factor Authentication Methods</h2>
+            <p class="section-subtitle">Choose from our comprehensive range of MFA solutions</p>
+
+            <div class="methods-grid">
+                <!-- SMS OTP -->
+                <div class="method-card">
+                    <div class="method-icon">📱</div>
+                    <h3>SMS OTP</h3>
+                    <p>Receive one-time passwords via text message for quick and convenient authentication.</p>
+                    <ul class="method-features">
+                        <li>✓ Wide device compatibility</li>
+                        <li>✓ No app installation required</li>
+                        <li>✓ Instant delivery</li>
+                        <li>✓ Easy user adoption</li>
+                    </ul>
+                    <button class="btn-learn-more" onclick="openModal('sms')">Learn More</button>
+                </div>
+
+                <!-- Email OTP -->
+                <div class="method-card">
+                    <div class="method-icon">📧</div>
+                    <h3>Email OTP</h3>
+                    <p>Secure verification codes delivered directly to your email inbox.</p>
+                    <ul class="method-features">
+                        <li>✓ Universal accessibility</li>
+                        <li>✓ No phone required</li>
+                        <li>✓ Audit trail included</li>
+                        <li>✓ Cost-effective solution</li>
+                    </ul>
+                    <button class="btn-learn-more" onclick="openModal('email')">Learn More</button>
+                </div>
+
+                <!-- App-based OTP -->
+                <div class="method-card featured">
+                    <div class="featured-badge">Recommended</div>
+                    <div class="method-icon">📲</div>
+                    <h3>App-based OTP</h3>
+                    <p>Generate time-based codes using authenticator apps like Google Authenticator or Microsoft
+                        Authenticator.</p>
+                    <ul class="method-features">
+                        <li>✓ Works offline</li>
+                        <li>✓ Enhanced security</li>
+                        <li>✓ No SMS costs</li>
+                        <li>✓ Industry standard</li>
+                    </ul>
+                    <button class="btn-learn-more" onclick="openModal('app')">Learn More</button>
+                </div>
+
+                <!-- Biometrics -->
+                <div class="method-card">
+                    <div class="method-icon">👆</div>
+                    <h3>Biometrics</h3>
+                    <p>Use fingerprint, face recognition, or iris scanning for seamless authentication.</p>
+                    <ul class="method-features">
+                        <li>✓ Passwordless experience</li>
+                        <li>✓ Highest security level</li>
+                        <li>✓ Fast authentication</li>
+                        <li>✓ Cannot be shared</li>
+                    </ul>
+                    <button class="btn-learn-more" onclick="openModal('biometric')">Learn More</button>
+                </div>
+
+                <!-- Hardware Tokens -->
+                <div class="method-card">
+                    <div class="method-icon">🔑</div>
+                    <h3>Hardware Tokens</h3>
+                    <p>Physical security keys like YubiKey for maximum protection against phishing.</p>
+                    <ul class="method-features">
+                        <li>✓ Phishing-resistant</li>
+                        <li>✓ No battery required</li>
+                        <li>✓ Durable and portable</li>
+                        <li>✓ FIDO2 compliant</li>
+                    </ul>
+                    <button class="btn-learn-more" onclick="openModal('hardware')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTP Demo Section -->
+    <section id="demo" class="section section-demo"></section>
+    <div class="container">
+        <h2 class="section-title">Try MFA Methods - Live Demo</h2>
+        <p class="section-subtitle">Experience how different OTP methods work in real-time</p>
+
+        <div class="demo-grid">
+            <!-- SMS OTP Demo -->
+            <div class="demo-card">
+                <div class="demo-header">
+                    <span class="demo-icon">📱</span>
+                    <h3>SMS OTP Demo</h3>
+                </div>
+                <p class="demo-description">Enter your phone number to receive a verification code</p>
+                <div class="demo-form">
+                    <div class="form-group">
+                        <label for="countryCode">Country</label>
+                        <select id="countryCode" class="demo-input country-select" onchange="updatePhonePlaceholder()">
+                            <option value="+1" data-country="United States" data-flag="🇺🇸">🇺🇸 United States (+1)</option>
+                            <option value="+1" data-country="Canada" data-flag="🇨🇦">🇨🇦 Canada (+1)</option>
+                            <option value="+44" data-country="United Kingdom" data-flag="🇬🇧">🇬🇧 United Kingdom (+44)</option>
+                            <option value="+91" data-country="India" data-flag="🇮🇳">🇮🇳 India (+91)</option>
+                            <option value="+86" data-country="China" data-flag="🇨🇳">🇨🇳 China (+86)</option>
+                            <option value="+81" data-country="Japan" data-flag="🇯🇵">🇯🇵 Japan (+81)</option>
+                            <option value="+82" data-country="South Korea" data-flag="🇰🇷">🇰🇷 South Korea (+82)</option>
+                            <option value="+49" data-country="Germany" data-flag="🇩🇪">🇩🇪 Germany (+49)</option>
+                            <option value="+33" data-country="France" data-flag="🇫🇷">🇫🇷 France (+33)</option>
+                            <option value="+39" data-country="Italy" data-flag="🇮🇹">🇮🇹 Italy (+39)</option>
+                            <option value="+34" data-country="Spain" data-flag="🇪🇸">🇪🇸 Spain (+34)</option>
+                            <option value="+31" data-country="Netherlands" data-flag="🇳🇱">🇳🇱 Netherlands (+31)</option>
+                            <option value="+41" data-country="Switzerland" data-flag="🇨🇭">🇨🇭 Switzerland (+41)</option>
+                            <option value="+46" data-country="Sweden" data-flag="🇸🇪">🇸🇪 Sweden (+46)</option>
+                            <option value="+47" data-country="Norway" data-flag="🇳🇴">🇳🇴 Norway (+47)</option>
+                            <option value="+45" data-country="Denmark" data-flag="🇩🇰">🇩🇰 Denmark (+45)</option>
+                            <option value="+358" data-country="Finland" data-flag="🇫🇮">🇫🇮 Finland (+358)</option>
+                            <option value="+48" data-country="Poland" data-flag="🇵🇱">🇵🇱 Poland (+48)</option>
+                            <option value="+7" data-country="Russia" data-flag="🇷🇺">🇷🇺 Russia (+7)</option>
+                            <option value="+380" data-country="Ukraine" data-flag="🇺🇦">🇺🇦 Ukraine (+380)</option>
+                            <option value="+90" data-country="Turkey" data-flag="🇹🇷">🇹🇷 Turkey (+90)</option>
+                            <option value="+20" data-country="Egypt" data-flag="🇪🇬">🇪🇬 Egypt (+20)</option>
+                            <option value="+27" data-country="South Africa" data-flag="🇿🇦">🇿🇦 South Africa (+27)</option>
+                            <option value="+234" data-country="Nigeria" data-flag="🇳🇬">🇳🇬 Nigeria (+234)</option>
+                            <option value="+254" data-country="Kenya" data-flag="🇰🇪">🇰🇪 Kenya (+254)</option>
+                            <option value="+61" data-country="Australia" data-flag="🇦🇺">🇦🇺 Australia (+61)</option>
+                            <option value="+64" data-country="New Zealand" data-flag="🇳🇿">🇳🇿 New Zealand (+64)</option>
+                            <option value="+65" data-country="Singapore" data-flag="🇸🇬">🇸🇬 Singapore (+65)</option>
+                            <option value="+60" data-country="Malaysia" data-flag="🇲🇾">🇲🇾 Malaysia (+60)</option>
+                            <option value="+66" data-country="Thailand" data-flag="🇹🇭">🇹🇭 Thailand (+66)</option>
+                            <option value="+84" data-country="Vietnam" data-flag="🇻🇳">🇻🇳 Vietnam (+84)</option>
+                            <option value="+63" data-country="Philippines" data-flag="🇵🇭">🇵🇭 Philippines (+63)</option>
+                            <option value="+62" data-country="Indonesia" data-flag="🇮🇩">🇮🇩 Indonesia (+62)</option>
+                            <option value="+92" data-country="Pakistan" data-flag="🇵🇰">🇵🇰 Pakistan (+92)</option>
+                            <option value="+880" data-country="Bangladesh" data-flag="🇧🇩">🇧🇩 Bangladesh (+880)</option>
+                            <option value="+94" data-country="Sri Lanka" data-flag="🇱🇰">🇱🇰 Sri Lanka (+94)</option>
+                            <option value="+977" data-country="Nepal" data-flag="🇳🇵">🇳🇵 Nepal (+977)</option>
+                            <option value="+52" data-country="Mexico" data-flag="🇲🇽">🇲🇽 Mexico (+52)</option>
+                            <option value="+55" data-country="Brazil" data-flag="🇧🇷">🇧🇷 Brazil (+55)</option>
+                            <option value="+54" data-country="Argentina" data-flag="🇦🇷">🇦🇷 Argentina (+54)</option>
+                            <option value="+56" data-country="Chile" data-flag="🇨🇱">🇨🇱 Chile (+56)</option>
+                            <option value="+57" data-country="Colombia" data-flag="🇨🇴">🇨🇴 Colombia (+57)</option>
+                            <option value="+51" data-country="Peru" data-flag="🇵🇪">🇵🇪 Peru (+51)</option>
+                            <option value="+58" data-country="Venezuela" data-flag="🇻🇪">🇻🇪 Venezuela (+58)</option>
+                            <option value="+971" data-country="UAE" data-flag="🇦🇪">🇦🇪 UAE (+971)</option>
+                            <option value="+966" data-country="Saudi Arabia" data-flag="🇸🇦">🇸🇦 Saudi Arabia (+966)</option>
+                            <option value="+972" data-country="Israel" data-flag="🇮🇱">🇮🇱 Israel (+972)</option>
+                            <option value="+98" data-country="Iran" data-flag="🇮🇷">🇮🇷 Iran (+98)</option>
+                            <option value="+964" data-country="Iraq" data-flag="🇮🇶">🇮🇶 Iraq (+964)</option>
+                            <option value="+962" data-country="Jordan" data-flag="🇯🇴">🇯🇴 Jordan (+962)</option>
+                            <option value="+961" data-country="Lebanon" data-flag="🇱🇧">🇱🇧 Lebanon (+961)</option>
+                            <option value="+852" data-country="Hong Kong" data-flag="🇭🇰">🇭🇰 Hong Kong (+852)</option>
+                            <option value="+886" data-country="Taiwan" data-flag="🇹🇼">🇹🇼 Taiwan (+886)</option>
+                            <option value="+853" data-country="Macau" data-flag="🇲🇴">🇲🇴 Macau (+853)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="smsPhone">Phone Number</label>
+                        <div class="phone-input-group">
+                            <span class="country-code-display" id="countryCodeDisplay">+1</span>
+                            <input type="tel" id="smsPhone" placeholder="(555) 123-4567" class="demo-input phone-input">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="sendSMSOTP()">Send SMS Code</button>
+
+                    <div id="smsResult" class="demo-result" style="display: none;">
+                        <div class="result-header">
+                            <span class="result-icon">✉️</span>
+                            <strong>SMS Sent!</strong>
+                        </div>
+                        <div class="result-content">
+                            <p>Your verification code:</p>
+                            <div class="otp-display" id="smsOTP"></div>
+                            <p class="result-note">Code expires in: <span id="smsTimer" class="timer">05:00</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="smsVerify">Enter Code to Verify</label>
+                            <input type="text" id="smsVerify" placeholder="Enter 6-digit code" class="demo-input"
+                                maxlength="6">
+                        </div>
+                        <button class="btn btn-secondary" onclick="verifySMSOTP()">Verify Code</button>
+                        <div id="smsVerifyResult" class="verify-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email OTP Demo -->
+            <div class="demo-card">
+                <div class="demo-header">
+                    <span class="demo-icon">📧</span>
+                    <h3>Email OTP Demo</h3>
+                </div>
+                <p class="demo-description">Enter your email to receive a verification code</p>
+                <div class="demo-form">
+                    <div class="form-group">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" id="emailAddress" placeholder="user@example.com" class="demo-input">
+                    </div>
+                    <button class="btn btn-primary" onclick="sendEmailOTP()">Send Email Code</button>
+
+                    <div id="emailResult" class="demo-result" style="display: none;">
+                        <div class="result-header">
+                            <span class="result-icon">📬</span>
+                            <strong>Email Sent!</strong>
+                        </div>
+                        <div class="result-content">
+                            <p>Your verification code:</p>
+                            <div class="otp-display" id="emailOTP"></div>
+                            <p class="result-note">Code expires in: <span id="emailTimer" class="timer">05:00</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailVerify">Enter Code to Verify</label>
+                            <input type="text" id="emailVerify" placeholder="Enter 6-digit code" class="demo-input"
+                                maxlength="6">
+                        </div>
+                        <button class="btn btn-secondary" onclick="verifyEmailOTP()">Verify Code</button>
+                        <div id="emailVerifyResult" class="verify-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App-based OTP Demo -->
+            <div class="demo-card featured-demo">
+                <div class="demo-header">
+                    <span class="demo-icon">📲</span>
+                    <h3>App-based OTP Demo</h3>
+                </div>
+                <p class="demo-description">Simulates time-based OTP like Google Authenticator</p>
+                <div class="demo-form">
+                    <div class="form-group">
+                        <label for="appUsername">Username</label>
+                        <input type="text" id="appUsername" placeholder="Enter your username" class="demo-input">
+                    </div>
+                    <button class="btn btn-primary" onclick="generateAppOTP()">Generate TOTP</button>
+
+                    <div id="appResult" class="demo-result" style="display: none;">
+                        <div class="result-header">
+                            <span class="result-icon">🔐</span>
+                            <strong>Authenticator Active</strong>
+                        </div>
+                        <div class="result-content">
+                            <p>Current TOTP Code:</p>
+                            <div class="otp-display totp-display" id="appOTP"></div>
+                            <div class="totp-progress">
+                                <div class="totp-progress-bar" id="totpProgress"></div>
+                            </div>
+                            <p class="result-note">New code in: <span id="appTimer" class="timer">30</span>s</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="appVerify">Enter Code to Verify</label>
+                            <input type="text" id="appVerify" placeholder="Enter 6-digit code" class="demo-input"
+                                maxlength="6">
+                        </div>
+                        <button class="btn btn-secondary" onclick="verifyAppOTP()">Verify Code</button>
+                        <div id="appVerifyResult" class="verify-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-note">
+            <p><strong>Note:</strong> This is a demonstration only. In production, OTP codes would be sent via actual
+                SMS/Email services and TOTP would use secure cryptographic algorithms.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section id="integration" class="section section-alt"></section>
+    <div class="container">
+        <h2 class="section-title">Seamless Integration</h2>
+        <p class="section-subtitle">Connect with your existing infrastructure</p>
+
+        <div class="integration-grid">
+            <div class="integration-card">
+                <div class="integration-icon">🗂️</div>
+                <h3>Active Directory</h3>
+                <p>Full integration with Microsoft Active Directory for centralized user management and authentication.
+                </p>
+                <div class="integration-details">
+                    <span class="tag">LDAP</span>
+                    <span class="tag">Azure AD</span>
+                    <span class="tag">On-Premise</span>
+                </div>
+            </div>
+
+            <div class="integration-card">
+                <div class="integration-icon">🔗</div>
+                <h3>Single Sign-On (SSO)</h3>
+                <p>Support for SAML, OAuth 2.0, and OpenID Connect protocols for seamless SSO integration.</p>
+                <div class="integration-details">
+                    <span class="tag">SAML 2.0</span>
+                    <span class="tag">OAuth</span>
+                    <span class="tag">OIDC</span>
+                </div>
+            </div>
+
+            <div class="integration-card">
+                <div class="integration-icon">🌐</div>
+                <h3>VPN Integration</h3>
+                <p>Secure remote access with MFA-protected VPN connections for distributed teams.</p>
+                <div class="integration-details">
+                    <span class="tag">IPSec</span>
+                    <span class="tag">SSL VPN</span>
+                    <span class="tag">Zero Trust</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Biometric Authentication Section -->
+    <section id="biometric" class="section">
+        <div class="container">
+            <h2 class="section-title">Biometric Authentication</h2>
+            <p class="section-subtitle">Experience passwordless authentication with fingerprint, face, and iris
+                recognition</p>
+
+            <div class="biometric-container">
+                <!-- Biometric Method Selection -->
+                <div class="biometric-selector">
+                    <h3>Choose Authentication Method</h3>
+                    <div class="biometric-methods">
+                        <div class="bio-method-card active" id="fingerprintCard"
+                            onclick="selectBiometricMethod('fingerprint')">
+                            <div class="bio-icon">👆</div>
+                            <h4>Fingerprint</h4>
+                            <p>Touch sensor authentication</p>
+                        </div>
+
+                        <div class="bio-method-card" id="faceCard" onclick="selectBiometricMethod('face')">
+                            <div class="bio-icon">😊</div>
+                            <h4>Face Recognition</h4>
+                            <p>Facial biometric scan</p>
+                        </div>
+
+                        <div class="bio-method-card" id="irisCard" onclick="selectBiometricMethod('iris')">
+                            <div class="bio-icon">👁️</div>
+                            <h4>Iris Scan</h4>
+                            <p>Eye pattern recognition</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biometric Scanner Display -->
+                <div class="biometric-scanner">
+                    <div class="scanner-header">
+                        <h3 id="scannerTitle">Fingerprint Scanner</h3>
+                        <div class="scanner-status" id="scannerStatus">
+                            <span class="status-dot"></span>
+                            <span>Ready to scan</span>
+                        </div>
+                    </div>
+
+                    <!-- Fingerprint Scanner -->
+                    <div class="scanner-display" id="fingerprintScanner">
+                        <div class="fingerprint-sensor" id="fingerprintSensor">
+                            <div class="sensor-ring"></div>
+                            <div class="sensor-ring"></div>
+                            <div class="sensor-ring"></div>
+                            <div class="fingerprint-icon">👆</div>
+                        </div>
+                        <p class="scanner-instruction">Place your finger on the sensor</p>
+                    </div>
+
+                    <!-- Face Recognition Scanner -->
+                    <div class="scanner-display" id="faceScanner" style="display: none;">
+                        <div class="face-scanner-frame">
+                            <div class="face-outline">
+                                <div class="face-corner tl"></div>
+                                <div class="face-corner tr"></div>
+                                <div class="face-corner bl"></div>
+                                <div class="face-corner br"></div>
+                                <div class="face-icon">😊</div>
+                            </div>
+                            <div class="scan-line"></div>
+                        </div>
+                        <p class="scanner-instruction">Position your face in the frame</p>
+                    </div>
+
+                    <!-- Iris Scanner -->
+                    <div class="scanner-display" id="irisScanner" style="display: none;">
+                        <div class="iris-scanner-frame">
+                            <div class="iris-outline">
+                                <div class="iris-icon">👁️</div>
+                                <div class="iris-ring"></div>
+                                <div class="iris-ring"></div>
+                            </div>
+                            <div class="iris-scan-beam"></div>
+                        </div>
+                        <p class="scanner-instruction">Look directly at the camera</p>
+                    </div>
+
+                    <button class="btn btn-primary btn-full" id="scanButton" onclick="startBiometricScan()">
+                        Start Scan
+                    </button>
+
+                    <div class="scan-progress" id="scanProgress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="progress-text" id="progressText">Scanning... 0%</p>
+                    </div>
+                </div>
+
+                <!-- Authentication Result -->
+                <div class="biometric-result">
+                    <div class="result-header">
+                        <h3>Authentication Status</h3>
+                    </div>
+
+                    <div class="result-display" id="resultDisplay">
+                        <div class="result-icon">⏳</div>
+                        <h4>Waiting for scan...</h4>
+                        <p>Select a method and start scanning</p>
+                    </div>
+
+                    <div class="biometric-info" id="biometricInfo" style="display: none;">
+                        <h4>Biometric Data</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Method:</span>
+                                <span class="info-value" id="infoMethod">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Quality:</span>
+                                <span class="info-value" id="infoQuality">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Match Score:</span>
+                                <span class="info-value" id="infoScore">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Time:</span>
+                                <span class="info-value" id="infoTime">-</span>
+                            </div>
+                        </div>
+
+                        <div class="enrolled-biometrics">
+                            <h5>Enrolled Biometrics</h5>
+                            <div class="enrolled-list" id="enrolledList">
+                                <div class="enrolled-item">
+                                    <span class="enrolled-icon">👆</span>
+                                    <span>Right Index Finger</span>
+                                    <span class="enrolled-badge">✓</span>
+                                </div>
+                                <div class="enrolled-item">
+                                    <span class="enrolled-icon">😊</span>
+                                    <span>Face Profile</span>
+                                    <span class="enrolled-badge">✓</span>
+                                </div>
+                                <div class="enrolled-item">
+                                    <span class="enrolled-icon">👁️</span>
+                                    <span>Right Iris</span>
+                                    <span class="enrolled-badge">✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-full" onclick="resetBiometric()">
+                            Scan Again
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biometric Features -->
+            <div class="biometric-features">
+                <h3>Why Biometric Authentication?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Highly Secure</h4>
+                        <p>Unique biological traits that cannot be easily replicated or stolen</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast & Convenient</h4>
+                        <p>Authenticate in seconds without remembering passwords</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🚫</div>
+                        <h4>Non-Transferable</h4>
+                        <p>Biometric data is tied to you and cannot be shared</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>High Accuracy</h4>
+                        <p>Advanced algorithms ensure precise identification</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="biometric-disclaimer">
+                <p><strong>⚠️ Demo Notice:</strong> This is a biometric authentication simulator for demonstration
+                    purposes. It simulates fingerprint, face, and iris recognition but does not capture or store actual
+                    biometric data. For production use, implement proper biometric APIs (WebAuthn, platform-specific
+                    SDKs) with secure biometric data handling and privacy compliance (GDPR, CCPA, BIPA).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN Demo Section -->
+    <section id="vpn" class="section"></section>
+    <div class="container">
+        <h2 class="section-title">Secure VPN Demo</h2>
+        <p class="section-subtitle">Experience secure browsing with our VPN simulator</p>
+
+        <div class="vpn-container">
+            <!-- VPN Status Panel -->
+            <div class="vpn-status-panel">
+                <div class="vpn-status-header">
+                    <div class="vpn-logo">🛡️</div>
+                    <h3>VPN Status</h3>
+                </div>
+
+                <div class="vpn-connection-status" id="vpnStatus">
+                    <div class="status-indicator" id="statusIndicator"></div>
+                    <span id="statusText">Disconnected</span>
+                </div>
+
+                <div class="vpn-info-grid">
+                    <div class="vpn-info-item">
+                        <span class="info-label">Your IP:</span>
+                        <span class="info-value" id="currentIP">Loading...</span>
+                    </div>
+                    <div class="vpn-info-item">
+                        <span class="info-label">Location:</span>
+                        <span class="info-value" id="currentLocation">Loading...</span>
+                    </div>
+                    <div class="vpn-info-item">
+                        <span class="info-label">ISP:</span>
+                        <span class="info-value" id="currentISP">Loading...</span>
+                    </div>
+                    <div class="vpn-info-item">
+                        <span class="info-label">Protocol:</span>
+                        <span class="info-value" id="protocol">-</span>
+                    </div>
+                </div>
+
+                <button class="vpn-connect-btn" id="vpnConnectBtn" onclick="toggleVPN()">
+                    <span class="btn-icon">🔌</span>
+                    <span class="btn-text">Connect to VPN</span>
+                </button>
+
+                <div class="vpn-stats" id="vpnStats" style="display: none;">
+                    <div class="stat-item">
+                        <span class="stat-icon">⬇️</span>
+                        <div class="stat-info">
+                            <span class="stat-label">Download</span>
+                            <span class="stat-value" id="downloadSpeed">0 Mbps</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">⬆️</span>
+                        <div class="stat-info">
+                            <span class="stat-label">Upload</span>
+                            <span class="stat-value" id="uploadSpeed">0 Mbps</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">⏱️</span>
+                        <div class="stat-info">
+                            <span class="stat-label">Connected</span>
+                            <span class="stat-value" id="connectionTime">00:00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VPN Server Selection -->
+            <div class="vpn-servers-panel">
+                <h3>Select VPN Server</h3>
+                <div class="server-search">
+                    <input type="text" id="serverSearch" placeholder="Search servers..." class="server-search-input">
+                </div>
+
+                <div class="servers-list" id="serversList">
+                    <!-- Servers will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- VPN Features -->
+            <div class="vpn-features-panel">
+                <h3>Security Features</h3>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <input type="checkbox" id="killSwitch" checked>
+                        <label for="killSwitch">
+                            <span class="feature-icon">🔒</span>
+                            <div class="feature-info">
+                                <strong>Kill Switch</strong>
+                                <p>Blocks internet if VPN disconnects</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="dnsLeak" checked>
+                        <label for="dnsLeak">
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-info">
+                                <strong>DNS Leak Protection</strong>
+                                <p>Prevents DNS queries from leaking</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="splitTunnel">
+                        <label for="splitTunnel">
+                            <span class="feature-icon">🔀</span>
+                            <div class="feature-info">
+                                <strong>Split Tunneling</strong>
+                                <p>Route specific apps through VPN</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="autoConnect">
+                        <label for="autoConnect">
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-info">
+                                <strong>Auto-Connect</strong>
+                                <p>Connect automatically on startup</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="protocol-selector">
+                    <label>VPN Protocol:</label>
+                    <select id="protocolSelect" onchange="changeProtocol()">
+                        <option value="OpenVPN">OpenVPN (Recommended)</option>
+                        <option value="WireGuard">WireGuard (Fastest)</option>
+                        <option value="IKEv2">IKEv2 (Mobile)</option>
+                        <option value="L2TP">L2TP/IPSec</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="vpn-disclaimer">
+            <p><strong>⚠️ Demo Notice:</strong> This is a VPN simulator for demonstration purposes. It simulates VPN
+                functionality but does not actually route your traffic through a VPN server. For real VPN protection,
+                use a professional VPN service.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Hardware Token + SSO Integration Section -->
+    <section id="sso-hardware" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Hardware Token + SSO Integration</h2>
+            <p class="section-subtitle">Experience enterprise-grade authentication with hardware tokens and Single
+                Sign-On</p>
+
+            <div class="sso-hardware-container">
+                <!-- SSO Login Panel -->
+                <div class="sso-panel">
+                    <div class="sso-header">
+                        <h3>🔐 Single Sign-On Login</h3>
+                        <p>Choose your identity provider</p>
+                    </div>
+
+                    <div class="sso-providers">
+                        <div class="sso-provider-card" onclick="selectSSO('okta')">
+                            <div class="provider-logo">🔷</div>
+                            <h4>Okta</h4>
+                            <p>Enterprise SSO</p>
+                        </div>
+
+                        <div class="sso-provider-card" onclick="selectSSO('azure')">
+                            <div class="provider-logo">☁️</div>
+                            <h4>Azure AD</h4>
+                            <p>Microsoft Identity</p>
+                        </div>
+
+                        <div class="sso-provider-card" onclick="selectSSO('google')">
+                            <div class="provider-logo">🔴</div>
+                            <h4>Google</h4>
+                            <p>Google Workspace</p>
+                        </div>
+
+                        <div class="sso-provider-card" onclick="selectSSO('auth0')">
+                            <div class="provider-logo">🔶</div>
+                            <h4>Auth0</h4>
+                            <p>Universal Identity</p>
+                        </div>
+                    </div>
+
+                    <div class="sso-login-form" id="ssoLoginForm" style="display: none;">
+                        <div class="selected-provider" id="selectedProvider"></div>
+
+                        <div class="form-group">
+                            <label for="ssoEmail">Email Address</label>
+                            <input type="email" id="ssoEmail" placeholder="user@company.com" class="demo-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ssoPassword">Password</label>
+                            <input type="password" id="ssoPassword" placeholder="Enter your password"
+                                class="demo-input">
+                        </div>
+
+                        <button class="btn btn-primary btn-full" onclick="initiateSSO()">
+                            Sign In with SSO
+                        </button>
+
+                        <button class="btn-link" onclick="resetSSO()">
+                            ← Choose different provider
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hardware Token Panel -->
+                <div class="hardware-panel">
+                    <div class="hardware-header">
+                        <h3>🔑 Hardware Security Key</h3>
+                        <p>Insert and tap your security key</p>
+                    </div>
+
+                    <div class="hardware-token-visual" id="hardwareToken">
+                        <div class="token-device">
+                            <div class="token-body">
+                                <div class="token-logo">YubiKey</div>
+                                <div class="token-button" id="tokenButton">
+                                    <div class="button-indicator"></div>
+                                </div>
+                                <div class="token-contacts"></div>
+                            </div>
+                        </div>
+                        <div class="token-status" id="tokenStatus">
+                            <span class="status-icon">⏳</span>
+                            <span class="status-text">Waiting for SSO login...</span>
+                        </div>
+                    </div>
+
+                    <div class="token-instructions" id="tokenInstructions" style="display: none;">
+                        <div class="instruction-step">
+                            <span class="step-number">1</span>
+                            <p>Insert your security key</p>
+                        </div>
+                        <div class="instruction-step">
+                            <span class="step-number">2</span>
+                            <p>Touch the button when it glows</p>
+                        </div>
+                        <div class="instruction-step">
+                            <span class="step-number">3</span>
+                            <p>Wait for authentication</p>
+                        </div>
+                    </div>
+
+                    <div class="registered-tokens" id="registeredTokens">
+                        <h4>Registered Security Keys</h4>
+                        <div class="tokens-list" id="tokensList">
+                            <p class="no-tokens">No security keys registered yet</p>
+                        </div>
+                        <button class="btn-secondary" onclick="registerNewToken()">
+                            + Register New Key
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Authentication Flow Panel -->
+                <div class="auth-flow-panel">
+                    <div class="flow-header">
+                        <h3>📊 Authentication Flow</h3>
+                        <p>Real-time authentication progress</p>
+                    </div>
+
+                    <div class="flow-steps" id="flowSteps">
+                        <div class="flow-step" id="step1">
+                            <div class="step-icon">1</div>
+                            <div class="step-content">
+                                <h4>SSO Provider Selection</h4>
+                                <p>Choose identity provider</p>
+                            </div>
+                            <div class="step-status">⏳</div>
+                        </div>
+
+                        <div class="flow-step" id="step2">
+                            <div class="step-icon">2</div>
+                            <div class="step-content">
+                                <h4>Credentials Verification</h4>
+                                <p>Validate username and password</p>
+                            </div>
+                            <div class="step-status">⏳</div>
+                        </div>
+
+                        <div class="flow-step" id="step3">
+                            <div class="step-icon">3</div>
+                            <div class="step-content">
+                                <h4>Hardware Token Challenge</h4>
+                                <p>Request security key authentication</p>
+                            </div>
+                            <div class="step-status">⏳</div>
+                        </div>
+
+                        <div class="flow-step" id="step4">
+                            <div class="step-icon">4</div>
+                            <div class="step-content">
+                                <h4>Token Verification</h4>
+                                <p>Verify cryptographic signature</p>
+                            </div>
+                            <div class="step-status">⏳</div>
+                        </div>
+
+                        <div class="flow-step" id="step5">
+                            <div class="step-icon">5</div>
+                            <div class="step-content">
+                                <h4>Session Creation</h4>
+                                <p>Create authenticated session</p>
+                            </div>
+                            <div class="step-status">⏳</div>
+                        </div>
+                    </div>
+
+                    <div class="auth-result" id="authResult" style="display: none;">
+                        <div class="result-icon" id="resultIcon">✅</div>
+                        <h3 id="resultTitle">Authentication Successful!</h3>
+                        <p id="resultMessage">You are now securely logged in</p>
+                        <div class="session-info" id="sessionInfo"></div>
+                        <button class="btn btn-primary" onclick="resetAuthentication()">
+                            Start New Authentication
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Token Registration Modal -->
+            <div class="token-modal" id="tokenModal" style="display: none;">
+                <div class="token-modal-content">
+                    <span class="modal-close" onclick="closeTokenModal()">&times;</span>
+                    <h3>Register New Security Key</h3>
+
+                    <div class="registration-steps" id="registrationSteps">
+                        <div class="reg-step active" id="regStep1">
+                            <h4>Step 1: Insert Security Key</h4>
+                            <div class="token-visual-small">
+                                <div class="token-device-small">🔑</div>
+                            </div>
+                            <p>Insert your hardware security key into a USB port</p>
+                            <button class="btn btn-primary" onclick="nextRegStep(2)">Key Inserted</button>
+                        </div>
+
+                        <div class="reg-step" id="regStep2">
+                            <h4>Step 2: Touch Security Key</h4>
+                            <div class="token-visual-small">
+                                <div class="token-device-small glowing">🔑</div>
+                            </div>
+                            <p>Touch the button on your security key when it glows</p>
+                            <button class="btn btn-primary" onclick="nextRegStep(3)">Key Touched</button>
+                        </div>
+
+                        <div class="reg-step" id="regStep3">
+                            <h4>Step 3: Name Your Key</h4>
+                            <div class="form-group">
+                                <label for="tokenName">Security Key Name</label>
+                                <input type="text" id="tokenName" placeholder="e.g., My YubiKey" class="demo-input">
+                            </div>
+                            <button class="btn btn-primary" onclick="completeRegistration()">Complete
+                                Registration</button>
+                        </div>
+
+                        <div class="reg-step" id="regStep4">
+                            <h4>✅ Registration Complete!</h4>
+                            <div class="success-animation">
+                                <div class="checkmark">✓</div>
+                            </div>
+                            <p>Your security key has been successfully registered</p>
+                            <button class="btn btn-primary" onclick="closeTokenModal()">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sso-hardware-disclaimer">
+                <p><strong>⚠️ Demo Notice:</strong> This is a simulator demonstrating Hardware Token + SSO integration.
+                    It simulates the complete authentication flow including FIDO2/WebAuthn protocols, but does not
+                    perform actual cryptographic operations or connect to real SSO providers. For production use,
+                    integrate with real identity providers and hardware token APIs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Guides Section -->
+    <section id="setup-guides" class="section"></section>
+    <div class="container">
+        <h2 class="section-title">Setup Guides</h2>
+        <p class="section-subtitle">Complete implementation guides for all MFA methods</p>
+
+        <div class="guides-container">
+            <!-- SMS OTP Setup Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">📱</span>
+                    <h3>SMS OTP Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>SMS Gateway Provider account (Twilio, AWS SNS, Nexmo)</li>
+                            <li>API credentials and authentication tokens</li>
+                            <li>Phone number verification system</li>
+                            <li>Database for storing user phone numbers</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Choose SMS Provider</strong>
+                                <p>Select a reliable SMS gateway (Twilio recommended for global coverage)</p>
+                            </li>
+                            <li>
+                                <strong>Configure API Credentials</strong>
+                                <p>Set up API keys, account SID, and authentication tokens</p>
+                            </li>
+                            <li>
+                                <strong>Implement OTP Generation</strong>
+                                <p>Create secure random 6-digit code generator with expiration (5-10 minutes)</p>
+                            </li>
+                            <li>
+                                <strong>Store OTP Securely</strong>
+                                <p>Hash and store OTP in database with timestamp and user ID</p>
+                            </li>
+                            <li>
+                                <strong>Send SMS</strong>
+                                <p>Use provider API to send OTP to user's verified phone number</p>
+                            </li>
+                            <li>
+                                <strong>Implement Verification</strong>
+                                <p>Compare entered code with stored hash, check expiration</p>
+                            </li>
+                            <li>
+                                <strong>Add Rate Limiting</strong>
+                                <p>Limit attempts to 3-5 per hour to prevent abuse</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Security Best Practices</h4>
+                        <ul>
+                            <li>Use HTTPS for all API communications</li>
+                            <li>Implement rate limiting (max 3 SMS per 5 minutes)</li>
+                            <li>Set OTP expiration to 5-10 minutes</li>
+                            <li>Log all SMS attempts for audit trail</li>
+                            <li>Validate phone numbers before sending</li>
+                            <li>Use alphanumeric codes for higher entropy</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Cost Considerations</h4>
+                        <p>Average cost: $0.01 - $0.05 per SMS. Budget accordingly for user base.</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- Email OTP Setup Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">📧</span>
+                    <h3>Email OTP Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>SMTP server or email service (SendGrid, AWS SES, Mailgun)</li>
+                            <li>Domain with SPF, DKIM, and DMARC configured</li>
+                            <li>Email templates designed</li>
+                            <li>User email verification system</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Configure Email Service</strong>
+                                <p>Set up SMTP credentials or API keys for email provider</p>
+                            </li>
+                            <li>
+                                <strong>Design Email Template</strong>
+                                <p>Create branded HTML email with clear OTP display</p>
+                            </li>
+                            <li>
+                                <strong>Implement SPF/DKIM/DMARC</strong>
+                                <p>Configure DNS records to prevent emails going to spam</p>
+                            </li>
+                            <li>
+                                <strong>Generate OTP Code</strong>
+                                <p>Create 6-8 digit code with 10-15 minute expiration</p>
+                            </li>
+                            <li>
+                                <strong>Send Email</strong>
+                                <p>Use email service API to deliver OTP to verified email</p>
+                            </li>
+                            <li>
+                                <strong>Track Delivery</strong>
+                                <p>Monitor bounce rates and delivery status</p>
+                            </li>
+                            <li>
+                                <strong>Verify Code</strong>
+                                <p>Validate entered code against stored hash</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Email Template Best Practices</h4>
+                        <ul>
+                            <li>Use clear subject line: "Your Verification Code"</li>
+                            <li>Display OTP prominently in large font</li>
+                            <li>Include expiration time clearly</li>
+                            <li>Add security warning about not sharing code</li>
+                            <li>Provide support contact information</li>
+                            <li>Make it mobile-responsive</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Deliverability Tips</h4>
+                        <p>Maintain sender reputation, use dedicated IP, monitor bounce rates, implement feedback loops.
+                        </p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- App-based OTP Setup Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">📲</span>
+                    <h3>App-based OTP (TOTP) Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>TOTP library (pyotp, speakeasy, otplib)</li>
+                            <li>QR code generation library</li>
+                            <li>Secure secret key storage</li>
+                            <li>Time synchronization (NTP)</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Generate Secret Key</strong>
+                                <p>Create unique 32-character base32 secret for each user</p>
+                            </li>
+                            <li>
+                                <strong>Store Secret Securely</strong>
+                                <p>Encrypt and store secret in database, never expose to client</p>
+                            </li>
+                            <li>
+                                <strong>Generate QR Code</strong>
+                                <p>Create otpauth:// URI and convert to QR code for scanning</p>
+                            </li>
+                            <li>
+                                <strong>Display Setup Instructions</strong>
+                                <p>Show QR code and manual entry option to user</p>
+                            </li>
+                            <li>
+                                <strong>Verify Initial Setup</strong>
+                                <p>Ask user to enter first TOTP code to confirm setup</p>
+                            </li>
+                            <li>
+                                <strong>Implement Verification</strong>
+                                <p>Validate TOTP codes with time window tolerance (±30 seconds)</p>
+                            </li>
+                            <li>
+                                <strong>Provide Backup Codes</strong>
+                                <p>Generate 10 single-use backup codes for device loss</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>TOTP Configuration</h4>
+                        <ul>
+                            <li>Algorithm: HMAC-SHA1 (RFC 6238 standard)</li>
+                            <li>Time step: 30 seconds</li>
+                            <li>Code length: 6 digits</li>
+                            <li>Time tolerance: ±1 window (30 seconds)</li>
+                            <li>Secret length: 160 bits (32 base32 characters)</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Compatible Apps</h4>
+                        <p>Google Authenticator, Microsoft Authenticator, Authy, 1Password, LastPass Authenticator</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- Biometric Authentication Setup Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">👆</span>
+                    <h3>Biometric Authentication Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>FIDO2/WebAuthn compatible server library</li>
+                            <li>HTTPS enabled (required for WebAuthn)</li>
+                            <li>Compatible devices (Touch ID, Face ID, Windows Hello)</li>
+                            <li>Fallback authentication method</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Implement WebAuthn API</strong>
+                                <p>Use navigator.credentials.create() for registration</p>
+                            </li>
+                            <li>
+                                <strong>Registration Flow</strong>
+                                <p>Generate challenge, collect biometric data, store public key</p>
+                            </li>
+                            <li>
+                                <strong>Store Credentials</strong>
+                                <p>Save credential ID and public key in database</p>
+                            </li>
+                            <li>
+                                <strong>Authentication Flow</strong>
+                                <p>Generate challenge, verify signature with stored public key</p>
+                            </li>
+                            <li>
+                                <strong>Handle Multiple Devices</strong>
+                                <p>Allow users to register multiple biometric devices</p>
+                            </li>
+                            <li>
+                                <strong>Implement Fallback</strong>
+                                <p>Provide alternative authentication if biometric fails</p>
+                            </li>
+                            <li>
+                                <strong>Privacy Compliance</strong>
+                                <p>Ensure GDPR/CCPA compliance for biometric data</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Security Considerations</h4>
+                        <ul>
+                            <li>Never store raw biometric data</li>
+                            <li>Use device-local biometric verification</li>
+                            <li>Implement attestation verification</li>
+                            <li>Require user presence verification</li>
+                            <li>Support multiple authenticators per user</li>
+                            <li>Provide device management interface</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Supported Platforms</h4>
+                        <p>iOS (Touch ID, Face ID), Android (Fingerprint, Face Unlock), Windows (Windows Hello), macOS
+                            (Touch ID)</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- Hardware Tokens Setup Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">🔑</span>
+                    <h3>Hardware Tokens Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>FIDO2/U2F compatible server library</li>
+                            <li>Hardware security keys (YubiKey, Titan, etc.)</li>
+                            <li>HTTPS enabled website</li>
+                            <li>Token management system</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Choose Token Standard</strong>
+                                <p>Implement FIDO2/WebAuthn for modern security keys</p>
+                            </li>
+                            <li>
+                                <strong>Procurement</strong>
+                                <p>Purchase hardware tokens in bulk for organization</p>
+                            </li>
+                            <li>
+                                <strong>Registration Process</strong>
+                                <p>User inserts token, taps button, system stores public key</p>
+                            </li>
+                            <li>
+                                <strong>Store Token Data</strong>
+                                <p>Save credential ID, public key, and token metadata</p>
+                            </li>
+                            <li>
+                                <strong>Authentication Flow</strong>
+                                <p>Challenge-response with cryptographic verification</p>
+                            </li>
+                            <li>
+                                <strong>Token Management</strong>
+                                <p>Allow users to register multiple tokens, revoke lost ones</p>
+                            </li>
+                            <li>
+                                <strong>Backup Strategy</strong>
+                                <p>Require users to register 2+ tokens or backup method</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Recommended Hardware</h4>
+                        <ul>
+                            <li>YubiKey 5 Series (USB-A, USB-C, NFC)</li>
+                            <li>Google Titan Security Key</li>
+                            <li>Feitian ePass FIDO</li>
+                            <li>Thetis FIDO U2F Security Key</li>
+                            <li>SoloKeys</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Deployment Considerations</h4>
+                        <p>Budget $20-50 per token, plan for replacements, provide user training, establish token
+                            distribution process.</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- SSO Integration Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">🔗</span>
+                    <h3>SSO Integration Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>Identity Provider (IdP) - Okta, Auth0, Azure AD</li>
+                            <li>SAML 2.0 or OAuth 2.0/OIDC library</li>
+                            <li>SSL certificates</li>
+                            <li>Metadata exchange capability</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Choose Protocol</strong>
+                                <p>SAML 2.0 for enterprise, OAuth 2.0/OIDC for modern apps</p>
+                            </li>
+                            <li>
+                                <strong>Configure Identity Provider</strong>
+                                <p>Set up application in IdP, obtain metadata/credentials</p>
+                            </li>
+                            <li>
+                                <strong>Exchange Metadata</strong>
+                                <p>Import IdP metadata, export SP metadata to IdP</p>
+                            </li>
+                            <li>
+                                <strong>Implement SSO Endpoints</strong>
+                                <p>Create login, callback, and logout endpoints</p>
+                            </li>
+                            <li>
+                                <strong>Add MFA to SSO Flow</strong>
+                                <p>Configure MFA policies in IdP settings</p>
+                            </li>
+                            <li>
+                                <strong>Test Authentication</strong>
+                                <p>Verify login flow, attribute mapping, and MFA triggers</p>
+                            </li>
+                            <li>
+                                <strong>Implement Session Management</strong>
+                                <p>Handle session timeouts and single logout</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>MFA Integration Points</h4>
+                        <ul>
+                            <li>Configure MFA policies in IdP</li>
+                            <li>Set up adaptive authentication rules</li>
+                            <li>Define MFA requirements per application</li>
+                            <li>Implement step-up authentication</li>
+                            <li>Configure remember device options</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Popular SSO Providers</h4>
+                        <p>Okta, Auth0, Azure AD, OneLogin, Ping Identity, Google Workspace, AWS SSO</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+
+            <!-- VPN Integration Guide -->
+            <div class="guide-card">
+                <div class="guide-header">
+                    <span class="guide-icon">🌐</span>
+                    <h3>VPN Integration Setup Guide</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>VPN server (OpenVPN, WireGuard, Cisco AnyConnect)</li>
+                            <li>RADIUS server for authentication</li>
+                            <li>MFA provider with RADIUS support</li>
+                            <li>Network infrastructure access</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Step-by-Step Implementation</h4>
+                        <ol class="guide-steps">
+                            <li>
+                                <strong>Choose VPN Solution</strong>
+                                <p>Select VPN that supports RADIUS authentication</p>
+                            </li>
+                            <li>
+                                <strong>Set Up RADIUS Server</strong>
+                                <p>Install FreeRADIUS or use cloud RADIUS service</p>
+                            </li>
+                            <li>
+                                <strong>Configure MFA Provider</strong>
+                                <p>Connect MFA service to RADIUS (Duo, Okta, etc.)</p>
+                            </li>
+                            <li>
+                                <strong>Integrate VPN with RADIUS</strong>
+                                <p>Configure VPN to use RADIUS for authentication</p>
+                            </li>
+                            <li>
+                                <strong>Set Up MFA Policies</strong>
+                                <p>Define which users/groups require MFA</p>
+                            </li>
+                            <li>
+                                <strong>Test Connection</strong>
+                                <p>Verify VPN login triggers MFA prompt</p>
+                            </li>
+                            <li>
+                                <strong>Deploy to Users</strong>
+                                <p>Distribute VPN client and setup instructions</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>VPN + MFA Flow</h4>
+                        <ul>
+                            <li>User enters username and password</li>
+                            <li>VPN forwards to RADIUS server</li>
+                            <li>RADIUS triggers MFA challenge</li>
+                            <li>User completes MFA (push, OTP, etc.)</li>
+                            <li>RADIUS returns success/failure</li>
+                            <li>VPN grants or denies access</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h4>Recommended Solutions</h4>
+                        <p>Duo Security + OpenVPN, Okta + Cisco AnyConnect, Azure MFA + Azure VPN Gateway</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="toggleGuide(this)">Show Full Guide</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section"></section>
+    <div class="container">
+        <h2 class="section-title">Get Started Today</h2>
+        <p class="section-subtitle">Contact us to implement MFA in your organization</p>
+
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>parthxcore@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>8700xxxxxx</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🏢</span>
+                    <div>
+                        <strong>Address</strong>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MFA Solutions</h4>
+                    <p>Enterprise-grade multi-factor authentication for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#methods">MFA Methods</a></li>
+                        <li><a href="#integration">Integration</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MFA Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="input-enhancements.js"></script>
+    <script src="custom-cursor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+# GitHub Pages Configuration
+
+# Site settings
+title: MFA Solutions
+description: Professional Multi-Factor Authentication Platform
+url: "https://yourusername.github.io"
+baseurl: "/repository-name"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude files
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - api-server.js
+  - START_SERVER.bat
+  - START_SERVER.sh
+  - README.md
+  - "*.md"
+  - .gitignore
+  - .git
+
+# Include files
+include:
+  - .htaccess
+  - _redirects
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

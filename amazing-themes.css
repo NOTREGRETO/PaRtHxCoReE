@@ -1,0 +1,395 @@
+/* Amazing Dark & Light Mode Themes */
+
+/* Smooth theme transition */
+body,
+.navbar,
+.hero,
+.section,
+.card,
+.btn,
+.demo-card,
+.method-card,
+.integration-card,
+input,
+textarea,
+select {
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   LIGHT MODE - Clean & Professional
+   ============================================ */
+
+body {
+    --light-bg: #ffffff;
+    --light-text: #1a202c;
+    --light-text-secondary: #4a5568;
+    --light-card-bg: #ffffff;
+    --light-card-border: rgba(102, 126, 234, 0.1);
+    --light-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --light-shadow-hover: 0 20px 60px rgba(102, 126, 234, 0.15);
+    --light-accent: #667eea;
+    --light-accent-hover: #5568d3;
+}
+
+/* Light mode enhancements */
+body:not(.dark-mode) {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+}
+
+body:not(.dark-mode) .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+body:not(.dark-mode) .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+body:not(.dark-mode) .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+body:not(.dark-mode) .method-card,
+body:not(.dark-mode) .demo-card,
+body:not(.dark-mode) .integration-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+body:not(.dark-mode) .method-card:hover,
+body:not(.dark-mode) .demo-card:hover,
+body:not(.dark-mode) .integration-card:hover {
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15);
+    transform: translateY(-8px);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+body:not(.dark-mode) .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+body:not(.dark-mode) .btn-primary:hover {
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   DARK MODE - Stunning & Modern
+   ============================================ */
+
+body.dark-mode {
+    --dark-bg: #0f0f1e;
+    --dark-bg-secondary: #1a1a2e;
+    --dark-text: #e2e8f0;
+    --dark-text-secondary: #a0aec0;
+    --dark-card-bg: rgba(26, 26, 46, 0.8);
+    --dark-card-border: rgba(167, 139, 250, 0.2);
+    --dark-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    --dark-shadow-hover: 0 20px 60px rgba(167, 139, 250, 0.3);
+    --dark-accent: #a78bfa;
+    --dark-accent-hover: #c084fc;
+}
+
+/* Dark mode background with animated gradient */
+body.dark-mode {
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+    color: var(--dark-text);
+    position: relative;
+}
+
+body.dark-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(167, 139, 250, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(102, 126, 234, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(240, 147, 251, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+    animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* Dark mode navbar */
+body.dark-mode .navbar {
+    background: rgba(15, 15, 30, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+/* Dark mode hero */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    position: relative;
+}
+
+body.dark-mode .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 40%, rgba(167, 139, 250, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Dark mode cards with glow */
+body.dark-mode .method-card,
+body.dark-mode .demo-card,
+body.dark-mode .integration-card {
+    background: rgba(26, 26, 46, 0.8);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+body.dark-mode .method-card:hover,
+body.dark-mode .demo-card:hover,
+body.dark-mode .integration-card:hover {
+    box-shadow: 0 20px 60px rgba(167, 139, 250, 0.3);
+    transform: translateY(-8px);
+    border-color: rgba(167, 139, 250, 0.4);
+    background: rgba(26, 26, 46, 0.95);
+}
+
+/* Dark mode buttons with glow */
+body.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.4);
+    color: #0f0f1e;
+    font-weight: 600;
+}
+
+body.dark-mode .btn-primary:hover {
+    box-shadow: 0 12px 35px rgba(167, 139, 250, 0.6);
+    transform: translateY(-2px);
+}
+
+body.dark-mode .btn-secondary {
+    background: rgba(167, 139, 250, 0.1);
+    border: 2px solid rgba(167, 139, 250, 0.3);
+    color: var(--dark-accent);
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: rgba(167, 139, 250, 0.2);
+    border-color: rgba(167, 139, 250, 0.5);
+    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.3);
+}
+
+/* Dark mode inputs */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: rgba(26, 26, 46, 0.6);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    color: var(--dark-text);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+    background: rgba(26, 26, 46, 0.8);
+}
+
+/* Dark mode text colors */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: var(--dark-text);
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span {
+    color: var(--dark-text-secondary);
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON - Enhanced
+   ============================================ */
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+body.dark-mode .theme-toggle {
+    background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+    box-shadow: 0 8px 25px rgba(167, 139, 250, 0.4);
+}
+
+body.dark-mode .theme-toggle:hover {
+    box-shadow: 0 12px 35px rgba(167, 139, 250, 0.6);
+}
+
+/* Theme icon animation */
+.theme-icon {
+    animation: icon-float 3s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* ============================================
+   SECTION BACKGROUNDS
+   ============================================ */
+
+/* Light mode sections */
+body:not(.dark-mode) .section-alt {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Dark mode sections */
+body.dark-mode .section {
+    background: transparent;
+}
+
+body.dark-mode .section-alt {
+    background: rgba(26, 26, 46, 0.3);
+}
+
+/* ============================================
+   SPECIAL EFFECTS
+   ============================================ */
+
+/* Glow effect on hover (dark mode) */
+body.dark-mode .method-card:hover::before,
+body.dark-mode .demo-card:hover::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #a78bfa, #c084fc, #f0abfc);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(10px);
+}
+
+/* Shimmer effect on cards (light mode) */
+body:not(.dark-mode) .method-card::after,
+body:not(.dark-mode) .demo-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+body:not(.dark-mode) .method-card:hover::after,
+body:not(.dark-mode) .demo-card:hover::after {
+    left: 100%;
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+
+/* Light mode scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5568d3, #6a3f8f);
+}
+
+/* Dark mode scrollbar */
+body.dark-mode ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #a78bfa, #c084fc);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #9370db, #b57ce0);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}

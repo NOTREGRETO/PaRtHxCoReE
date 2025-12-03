@@ -1,0 +1,407 @@
+/* Performance Optimization - Fix Flickering */
+
+/* ============================================
+   REDUCE FLICKERING & IMPROVE PERFORMANCE
+   ============================================ */
+
+/* Force GPU acceleration for smooth rendering */
+body,
+.hero-epic,
+.section,
+.navbar,
+.method-card,
+.demo-card,
+.integration-card {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+/* Optimize animations to prevent flickering */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce particle count and optimize canvas */
+#particles-canvas {
+    will-change: auto;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Optimize gradient waves */
+.gradient-waves {
+    will-change: auto;
+    transform: translateZ(0);
+}
+
+.wave {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize floating orbs */
+.floating-orbs {
+    will-change: auto;
+    transform: translateZ(0);
+}
+
+.orb {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize sparkles */
+.sparkles {
+    will-change: auto;
+    opacity: 0.5; /* Reduce opacity to reduce rendering load */
+}
+
+/* Reduce animation complexity */
+@keyframes wave-animation-1 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) translateZ(0); }
+    50% { transform: translate(5%, 5%) rotate(90deg) translateZ(0); }
+}
+
+@keyframes wave-animation-2 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) translateZ(0); }
+    50% { transform: translate(-5%, 5%) rotate(120deg) translateZ(0); }
+}
+
+@keyframes wave-animation-3 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) translateZ(0); }
+    50% { transform: translate(5%, -5%) rotate(72deg) translateZ(0); }
+}
+
+/* Optimize card animations */
+.method-card,
+.demo-card,
+.integration-card,
+.guide-card {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+}
+
+/* Prevent layout shifts */
+.method-card::before,
+.method-card::after,
+.demo-card::before,
+.demo-card::after {
+    will-change: opacity;
+}
+
+/* Optimize navbar */
+.navbar {
+    will-change: background, box-shadow;
+    transform: translateZ(0);
+}
+
+/* Optimize hero section */
+.hero-epic {
+    will-change: auto;
+}
+
+.security-shield {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.floating-card {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize modal */
+.modal {
+    will-change: opacity;
+}
+
+.modal-content {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+}
+
+/* Reduce blur effects on low-end devices */
+@media (max-width: 767px) {
+    .navbar,
+    .modal,
+    .card-bg {
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
+    }
+}
+
+/* Optimize button animations */
+.btn,
+.btn-epic,
+.btn-learn-more {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+}
+
+/* Prevent text flickering */
+h1, h2, h3, h4, h5, h6, p, span, a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Optimize gradient text */
+.gradient-text,
+.gradient-text-animated,
+.hero-title-epic span {
+    will-change: background-position;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Reduce animation iterations on scroll elements */
+.scroll-animate,
+.scroll-animate-left,
+.scroll-animate-right,
+.scroll-animate-scale {
+    will-change: transform, opacity;
+}
+
+/* Optimize loading screen */
+.loading-screen-epic {
+    will-change: opacity, transform;
+}
+
+/* Prevent flickering during transitions */
+.section {
+    isolation: isolate;
+}
+
+/* Optimize theme toggle */
+.theme-toggle {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+}
+
+/* Reduce particle opacity for better performance */
+body.dark-mode #particles-canvas {
+    opacity: 0.4 !important;
+}
+
+body #particles-canvas {
+    opacity: 0.3 !important;
+}
+
+/* Optimize scan line */
+.scan-line {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Prevent flickering on hover */
+.method-card:hover,
+.demo-card:hover,
+.integration-card:hover {
+    transform: translateY(-12px) scale(1.02) translateZ(0);
+}
+
+/* Optimize shield layers */
+.shield-layer {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+}
+
+/* Reduce complexity of background effects */
+.hero-background-effects {
+    opacity: 0.8;
+}
+
+.hero-grid {
+    opacity: 0.5;
+}
+
+.hero-spotlight {
+    opacity: 0.6;
+}
+
+/* Optimize scroll indicator */
+.scroll-indicator {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Prevent flickering on form inputs */
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    transform: translateZ(0);
+}
+
+/* Optimize OTP display */
+.otp-display {
+    will-change: auto;
+    transform: translateZ(0);
+}
+
+/* Reduce animation complexity for better performance */
+@media (prefers-reduced-motion: no-preference) {
+    /* Simplify animations */
+    * {
+        animation-timing-function: ease !important;
+    }
+}
+
+/* Force hardware acceleration on critical elements */
+.hero-content-epic,
+.hero-visual,
+.nav-container,
+.modal-content,
+.demo-result {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* Prevent flickering during page load */
+body {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+body.loading {
+    opacity: 0.98;
+}
+
+/* Optimize image rendering */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Prevent flickering on dark mode toggle */
+body,
+body * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Reduce particle count on mobile */
+@media (max-width: 767px) {
+    #particles-canvas {
+        opacity: 0.2 !important;
+    }
+    
+    .floating-orbs {
+        opacity: 0.5 !important;
+    }
+    
+    .gradient-waves {
+        opacity: 0.5 !important;
+    }
+    
+    .sparkles {
+        display: none !important;
+    }
+}
+
+/* Optimize for 60fps */
+@media (min-width: 768px) {
+    * {
+        animation-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+}
+
+/* Prevent layout shift */
+.method-card,
+.demo-card,
+.integration-card {
+    contain: layout style paint;
+}
+
+/* Optimize rendering */
+.section {
+    contain: layout style;
+}
+
+/* Prevent flickering on scroll */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Optimize canvas rendering */
+canvas {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Reduce repaints */
+.navbar,
+.hero-epic,
+.section {
+    contain: layout;
+}
+
+/* Optimize z-index stacking */
+.navbar { z-index: 1000; }
+.theme-toggle { z-index: 1001; }
+.modal { z-index: 2000; }
+.loading-screen-epic { z-index: 99999; }
+
+/* Prevent flickering on button hover */
+.btn::before,
+.btn-epic::before,
+.btn-learn-more::before {
+    will-change: left;
+}
+
+/* Optimize badge animation */
+.badge-pulse {
+    will-change: transform;
+}
+
+/* Reduce complexity on low-end devices */
+@media (max-width: 767px) and (max-resolution: 1dppx) {
+    /* Disable complex animations */
+    .wave,
+    .orb,
+    .sparkle,
+    .floating-card {
+        animation: none !important;
+    }
+    
+    /* Reduce blur */
+    .navbar,
+    .modal,
+    .card-bg {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: var(--navbar-bg) !important;
+    }
+}
+
+/* Final optimization */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevent flickering during animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Optimize for retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    * {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}

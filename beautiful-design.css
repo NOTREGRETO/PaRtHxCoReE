@@ -1,0 +1,415 @@
+/* Beautiful Design - Smooth & Professional */
+
+/* ============================================
+   BEAUTIFUL STYLING WITHOUT FLICKERING
+   ============================================ */
+
+/* Subtle gradient background */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+    background-attachment: fixed !important;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b4e 100%) !important;
+    background-attachment: fixed !important;
+}
+
+/* Beautiful hero section */
+.hero-epic {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 50%, rgba(240, 147, 251, 0.95) 100%) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Subtle pattern overlay */
+.hero-epic::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) !important;
+    background-size: 50px 50px !important;
+    pointer-events: none !important;
+}
+
+/* Beautiful cards with smooth hover */
+.method-card,
+.demo-card,
+.integration-card,
+.guide-card {
+    background: var(--card-bg) !important;
+    border-radius: 24px !important;
+    padding: 35px !important;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.15) !important;
+    border: 2px solid rgba(102, 126, 234, 0.1) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Smooth hover effect */
+.method-card:hover,
+.demo-card:hover,
+.integration-card:hover,
+.guide-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.25) !important;
+    border-color: var(--accent-primary) !important;
+}
+
+/* Beautiful gradient border on hover */
+.method-card::before,
+.demo-card::before,
+.integration-card::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: -2px !important;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+    border-radius: 24px !important;
+    opacity: 0 !important;
+    z-index: -1 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.method-card:hover::before,
+.demo-card:hover::before,
+.integration-card:hover::before {
+    opacity: 0.3 !important;
+}
+
+/* Beautiful buttons */
+.btn,
+.btn-epic,
+.btn-learn-more {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 14px 32px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.btn:hover,
+.btn-epic:hover,
+.btn-learn-more:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Beautiful navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1) !important;
+}
+
+body.dark-mode .navbar {
+    background: rgba(15, 15, 35, 0.95) !important;
+}
+
+/* Beautiful nav links */
+.nav-link {
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.nav-link::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary)) !important;
+    transition: width 0.3s ease !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 80% !important;
+}
+
+/* Beautiful sections */
+.section {
+    padding: 100px 20px !important;
+    position: relative !important;
+}
+
+.section::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.3), transparent) !important;
+}
+
+/* Beautiful section titles */
+.section-title {
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+.section-title::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100px !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+    border-radius: 2px !important;
+}
+
+/* Beautiful inputs */
+.demo-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 2px solid rgba(102, 126, 234, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 14px 18px !important;
+    transition: all 0.3s ease !important;
+    background: var(--input-bg) !important;
+}
+
+.demo-input:focus,
+input:focus,
+textarea:focus {
+    border-color: var(--accent-primary) !important;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Beautiful OTP display */
+.otp-display {
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 12px !important;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    padding: 25px !important;
+    border-radius: 20px !important;
+    border: 2px solid rgba(102, 126, 234, 0.2) !important;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Beautiful stats */
+.stat-number {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Beautiful icons */
+.method-icon,
+.demo-icon,
+.integration-icon {
+    font-size: 4rem !important;
+    filter: drop-shadow(0 10px 20px rgba(102, 126, 234, 0.3)) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.method-card:hover .method-icon,
+.demo-card:hover .demo-icon {
+    transform: scale(1.1) !important;
+}
+
+/* Beautiful modal */
+.modal {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.modal-content {
+    background: var(--card-bg) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+    border: 2px solid rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Beautiful theme toggle */
+.theme-toggle {
+    background: var(--card-bg) !important;
+    border: 3px solid transparent !important;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.theme-toggle::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: -3px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+    z-index: -1 !important;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg) !important;
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Beautiful footer */
+.footer {
+    background: var(--footer-bg) !important;
+    position: relative !important;
+}
+
+.footer::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent) !important;
+}
+
+/* Beautiful hero title */
+.hero-title-epic {
+    font-size: 4.5rem !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Beautiful gradient text */
+.gradient-text-animated {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Beautiful badge */
+.hero-badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50px !important;
+    padding: 10px 20px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Beautiful feature pills */
+.feature-pill {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.feature-pill:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Beautiful scroll indicator */
+.scroll-indicator {
+    opacity: 0.8 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.scroll-indicator:hover {
+    opacity: 1 !important;
+}
+
+/* Beautiful loading screen */
+.loading-screen-epic {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+}
+
+/* Beautiful progress bar */
+.loading-progress-epic,
+.totp-progress-bar {
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary)) !important;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5) !important;
+}
+
+/* Beautiful architecture components */
+.arch-component {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    color: white !important;
+    padding: 15px 25px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.arch-component:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Beautiful contact section */
+.contact-info {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Smooth transitions for everything */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Beautiful responsive design */
+@media (max-width: 767px) {
+    .hero-title-epic {
+        font-size: 2.5rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+    
+    .method-card,
+    .demo-card {
+        padding: 25px !important;
+    }
+}
+
+/* Add subtle depth */
+.method-card,
+.demo-card,
+.integration-card {
+    transform-style: preserve-3d !important;
+}
+
+/* Beautiful focus states */
+*:focus-visible {
+    outline: 3px solid var(--accent-primary) !important;
+    outline-offset: 2px !important;
+    border-radius: 4px !important;
+}
+
+/* Smooth page transitions */
+body {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease !important;
+}
